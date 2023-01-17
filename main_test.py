@@ -16,15 +16,15 @@ def test_main_1():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*100[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*100[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
 
-    res = re.search('[\w,\W]*40[\w,\W]*60[\w,\W]*', lines[1])
+    res = re.search(r'[\w,\W]*40[\w,\W]*60[\w,\W]*', lines[1])
     assert res != None
     print(res.group())
 
-    res = re.search('[\w,\W]*40\.00[\w,\W]*60\.00[\w,\W]*', lines[2])
+    res = re.search(r'[\w,\W]*40\.00[\w,\W]*60\.00[\w,\W]*', lines[2])
     assert res != None
     print(res.group())
 
@@ -41,14 +41,14 @@ def test_main_2():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*30[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*30[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
 
-    res = re.search('[\w,\W]*10[\w,\W]*20[\w,\W]*', lines[1])
+    res = re.search(r'[\w,\W]*10[\w,\W]*20[\w,\W]*', lines[1])
     assert res != None
     print(res.group())
 
-    res = re.search('[\w,\W]*33\.33[\w,\W]*66\.67[\w,\W]*', lines[2])
+    res = re.search(r'[\w,\W]*33\.33[\w,\W]*66\.67[\w,\W]*', lines[2])
     assert res != None
     print(res.group())
