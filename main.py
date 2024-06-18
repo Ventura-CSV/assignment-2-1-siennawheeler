@@ -6,9 +6,9 @@ def main():
     ##################################################
     """
     
-    m_num = int(input("Number of males: ")
-    f_num = int(input("Nuumber of females: ")
-    nb_num = int(input("Number of non-binary people: ")
+    m_num = int(input("Number of males: "))
+    f_num = int(input("Nuumber of females: "))
+    nb_num = int(input("Number of non-binary people: "))
 
     total = m_num + f_num + nb_num
     m_perc = m_num * 100 / total
